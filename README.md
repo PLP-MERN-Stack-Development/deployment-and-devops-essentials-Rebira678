@@ -1,77 +1,97 @@
-# Deployment and DevOps for MERN Applications
+````markdown
+# Smart Recipe Recommender
 
-This assignment focuses on deploying a full MERN stack application to production, implementing CI/CD pipelines, and setting up monitoring for your application.
+🍽 **Smart Recipe Recommender** is a project developed by **Rebira Adugna** during the **Vibe Coding 3.0 Hackathon**, organized by **PLP (Power Learn Project)**.
 
-## Assignment Overview
+This project allows users to generate **personalized recipes** based on the ingredients they have in their pantry. Users can also save favorites, view food news, and listen to recipe instructions via text-to-speech.
 
-You will:
-1. Prepare your MERN application for production deployment
-2. Deploy the backend to a cloud platform
-3. Deploy the frontend to a static hosting service
-4. Set up CI/CD pipelines with GitHub Actions
-5. Implement monitoring and maintenance strategies
+---
 
-## Getting Started
+## **Features**
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Follow the setup instructions in the `Week7-Assignment.md` file
-4. Use the provided templates and configuration files as a starting point
+- User registration & login with secure password hashing
+- Personal pantry management
+- Recipe generation based on ingredients
+- Text-to-speech for recipes
+- Save favorite recipes
+- Food news ticker
+- Responsive design for mobile and desktop
 
-## Files Included
+---
 
-- `Week7-Assignment.md`: Detailed assignment instructions
-- `.github/workflows/`: GitHub Actions workflow templates
-- `deployment/`: Deployment configuration files and scripts
-- `.env.example`: Example environment variable templates
-- `monitoring/`: Monitoring configuration examples
+## **Technologies Used**
 
-## Requirements
+- Python 3 & Flask
+- SQLite (lightweight database)
+- HTML, CSS, JavaScript
+- Flask-Login for user authentication
+- Fetch API for async requests
 
-- A completed MERN stack application from previous weeks
-- Accounts on the following services:
-  - GitHub
-  - MongoDB Atlas
-  - Render, Railway, or Heroku (for backend)
-  - Vercel, Netlify, or GitHub Pages (for frontend)
-- Basic understanding of CI/CD concepts
+---
 
-## Deployment Platforms
+## **Setup / Installation**
 
-### Backend Deployment Options
-- **Render**: Easy to use, free tier available
-- **Railway**: Developer-friendly, generous free tier
-- **Heroku**: Well-established, extensive documentation
+1. Clone this repository:
 
-### Frontend Deployment Options
-- **Vercel**: Optimized for React apps, easy integration
-- **Netlify**: Great for static sites, good CI/CD
-- **GitHub Pages**: Free, integrated with GitHub
+   ```bash
+   git clone https://github.com/Rebira678/SmartRecipeRecommender
+   cd smart-recipe
+   ```
+````
 
-## CI/CD Pipeline
+2. Create a virtual environment:
 
-The assignment includes templates for setting up GitHub Actions workflows:
-- `frontend-ci.yml`: Tests and builds the React application
-- `backend-ci.yml`: Tests the Express.js backend
-- `frontend-cd.yml`: Deploys the frontend to your chosen platform
-- `backend-cd.yml`: Deploys the backend to your chosen platform
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # macOS/Linux
+   venv\Scripts\activate      # Windows
+   ```
 
-## Submission
+3. Install dependencies:
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-1. Complete all deployment tasks
-2. Set up CI/CD pipelines with GitHub Actions
-3. Deploy both frontend and backend to production
-4. Document your deployment process in the README.md
-5. Include screenshots of your CI/CD pipeline in action
-6. Add URLs to your deployed applications
+4. Run the app:
 
-## Resources
+   ```bash
+   python app.py
+   ```
 
-- [GitHub Actions Documentation](https://docs.github.com/en/actions)
-- [MongoDB Atlas Documentation](https://docs.atlas.mongodb.com/)
-- [Render Documentation](https://render.com/docs)
-- [Railway Documentation](https://docs.railway.app/)
-- [Vercel Documentation](https://vercel.com/docs)
-- [Netlify Documentation](https://docs.netlify.com/) 
+5. Open `http://127.0.0.1:5000` in your browser.
+
+---
+
+## **Usage**
+
+- Register a new account
+- Add ingredients to your pantry
+- Click **Generate** to see recipe suggestions
+- Save favorites or listen to instructions
+- Check food news
+
+---
+
+## **Screenshots**
+
+![ScreenshotOfWindow](static/images/ScreenshotOfWindow.png)
+![ScreenshotOfPhone](static/images/ScreenshotOfPhone.jpg)
+
+---
+
+## **Live Demo**
+
+(https://smartreciperecommender-c8i8.onrender.com/)
+
+---
+
+## **Live Demo Video**
+
+[![Watch the demo](https://img.youtube.com/vi/5-SyrZRUotU/maxresdefault.jpg)](https://youtu.be/5-SyrZRUotU)
+
+Click the thumbnail above to watch the demo on YouTube.
+
+## **Author**
+
+**Rebira Adugna**
